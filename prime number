@@ -1,0 +1,61 @@
+
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+    int n ,c=0;
+    printf("enter number:");
+    scanf("%d",&n);
+    for( int i = 1 ; i<=n ; i++ ){
+        if(n%i==0 ){
+            c++;
+        }
+    }
+     if (c == 2) {
+         printf("%d is a Prime number",n);
+    }
+    else {
+         printf("n is not a Prime number");
+  }
+  
+   
+return 0;
+}
+
+
+//prime numbers between two numbers
+
+
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+    int a,b,i,j,flag;
+    printf("enter lower bound:");
+    scanf("%d",&a);
+    printf("enter upper bound:");
+    scanf("%d",&b);
+    
+    printf("prime numbers between a and b are:\n");
+    
+    for(i=a;i<=b;i++){
+        if(i==1 || i==0){
+            continue;
+        }
+            flag = 1;
+            for(j=2;j<=i/2;++j){
+                if (i % j == 0) {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag == 1){
+            printf("%d\n",i);
+        }
+    }
+return 0;
+}
