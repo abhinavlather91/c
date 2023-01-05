@@ -109,3 +109,20 @@ int sumofdigits(int n)
   return s;
 }
 
+
+//function to find square root of any given number
+
+#include<stdio.h>
+#include<math.h>
+
+double findSQRT(double N){
+    return sqrt(N);
+}
+
+
+int main(){
+    int N=16;
+    printf("%f", findSQRT(N));
+    
+    return 0;
+}
