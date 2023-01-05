@@ -173,7 +173,26 @@ int main(){
 }
 
 
+//printing sum of digits of a number
 
+#include <stdio.h>
+int main(){
+    int n;
+    printf("enter the number:");
+    scanf("%d",&n);
+
+    
+    int sum = 0 ;
+    int m;
+    
+    while(n>0){
+        m=n%10;
+        sum +=m;
+        n=n/10;
+    }
+    printf("sum is = %d",sum);
+    return 0;
+}
 
 
 
