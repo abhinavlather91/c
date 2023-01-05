@@ -53,3 +53,71 @@ int main(){
     
     return 0;
 }
+
+
+//program to convert fahrenheit to celsius
+#include <stdio.h>
+
+float convertTemp(float cel){
+    float far = cel * (9.0/5.0) +32;
+    return far;
+}
+
+
+int main(){
+    float far=convertTemp(37);
+    printf("far  : %f",far);
+    
+    return 0;
+}
+
+
+//calculate percentage of marks of student
+
+#include <stdio.h>
+
+    int percentage (int science , int math , int sanskrit){
+        return ((science + math + sanskrit)/3);
+   
+    
+}
+
+
+int main(){
+    int sc = 98 ;
+    int math = 95;
+    int sanskrit = 99 ;
+    printf("percentage is : %d", percentage(sc, math , sanskrit));
+    
+    
+    return 0;
+}
+
+//function to print n terms of fibonacci sequence 
+
+#include <stdio.h>
+
+int fib(int n){
+    if( n==0 ){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+    int fibNm1 = fib(n-1);
+    int fibNm2= fib(n-2);
+    int fibN= fibNm1 +fibNm2;
+    // printf("fib of %d is : %d",n , fibN);
+    return fibN;
+}
+
+int main(){
+    
+    printf("%d",fib(6));
+    
+    
+    return 0;
+}
+
+
+
