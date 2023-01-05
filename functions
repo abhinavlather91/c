@@ -126,3 +126,21 @@ int main(){
     
     return 0;
 }
+
+//power of integer using power function
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int base,exp,result;
+    printf("enter a base number: ");
+    scanf("%d",&base);
+    printf("enter an exponent: ");
+    scanf("%d",&exp);
+    
+    result= pow(base,exp);
+    
+    printf("%d to the power of %d is = %d" ,base,exp,result);
+    
+    return 0;
+}
