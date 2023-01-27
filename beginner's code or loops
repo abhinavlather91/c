@@ -30,6 +30,7 @@ int main(){
 }
 
 
+
 // printing table of any given number
 
 #include <stdio.h>
