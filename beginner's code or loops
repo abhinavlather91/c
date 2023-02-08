@@ -233,7 +233,7 @@ int main(){
 int main(){
 
 
-  int number , sumEven=0,  sumOdd=0 ;
+  int number , sumEven=0,  sumOdd=0, count = 0 ;
   printf("enter the number:");
   scanf("%d",&number);
 
@@ -245,12 +245,29 @@ int main(){
     else{
       sumOdd+=temp;
     }
+    count++;
     number = number/10;
 
   }
-  printf("odd digit sum is %d\n",sumOdd);
-  printf("even digit sum is %d\n",sumEven);
-
+  if(count>3){
+    printf("number is not valid");
+  }
+  else{
+    if(sumEven==0){
+      printf("no even number\n");
+      printf("odd digit sum is %d\n",sumOdd);
+    }
+    if(sumOdd==0){
+      printf("no odd number\n");
+      printf("even digit sum is %d\n",sumEven);
+    }
+    if(sumEven!=0 && sumOdd!=0){
+      printf("odd digit sum is %d\n",sumOdd);
+      printf("even digit sum is %d\n",sumEven);
+    }
+    
+  }
+  
   return 0;
 }
 
